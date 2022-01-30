@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task33</title>
+</head>
+<body>
+    <p id="poruka"></p>
+    <button onclick="setujVrednost(1)">jedan</button>
+    <button onclick="setujVrednost(2)">dva</button>
+    <button onclick="setujVrednost(3)">tri</button>
+    <button onclick="setujVrednost(4)">cetri</button>
+
+    <script>
+var poruke = ["nista ne radi", "sve je u redu", "ponovi"]
+function setujVrednost(index) {
+    let poruka = document.querySelector ("#poruka")
+    let text = poruke[index-1];
+    if (text=== undefined) {
+        text="nema poruke";
+    }
+    poruka.innerText = text;
+}
+    </script>
+</body>
+</html>
