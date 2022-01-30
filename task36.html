@@ -7,30 +7,12 @@
     <title>task36</title>
 </head>
 <body>
-    <input type="number" id="input-a" value="0">
-    <input type="number" id="input-b" value="0">
-    <p id="res">0</p>
-    <script>
-        function izracunaj() {
-            let a= document.querySelector ("#input-a");
-            let b= document.querySelector ("#input-b");
-
-            let vrA= Number(a.value);
-            let vrB= Number(b.value);
-
-            let r= vrA + vrB;
-            let res = document.querySelector("#res");
-            res.innerHTML = `Resultat je <b>${r}</b>`;
-            
-        }
-        function init() {
-            let a= document.querySelector ("#input-a");
-            let b= document.querySelector ("#input-b");
-           
-            a.addEventListener( "change", izracunaj);
-            b.addEventListener( "change", izracunaj);
-        }
-        window.addEventListener("load", init)
-    </script>
+    Unesi ime: <input type="text" id="ime">
+    <button id="dodaj-ime">Dodaj</button>
+    <div id="imena">
+      
+    </div>
+    
+    <script src="main.js"></script>
 </body>
 </html>
