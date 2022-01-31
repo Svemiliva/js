@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 39</title>
+</head>
+<body>
+    <div id="poruka"></div>
+    ime: <input type="text" id="ime"><br>
+    ???
+
+    <script>
+window.addEventListener ("load", init);
+function init() {
+    let e = document.getElementById ("ime");
+    e.addEventListener ("keyup", proveriIme)
+}
+function proveriIme() {
+    let e = document.getElementById ("ime");
+    let ime = e.value;
+    let poruka = "";
+    if (ime.length < 3) {
+        poruka = "nije ispravno"
+    }
+    let pe = document.getElementById ("poruka");
+    pe.innerText = poruka;
+    
+}
+    </script>
+</body>
+</html>
