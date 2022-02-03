@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabele</title>
+    <style>
+        #zaposleni {
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 600px;
+            /*border-spacing: 0px;*/
+
+        }
+        #plata {
+            vertical-align: bottom;
+        }
+        #zaposleni th {
+            border: 1px solid gray;
+            padding: 3px;
+            font-size: 10pt;
+            background-color: purple;
+            color: seashell;
+        }
+        #zaposleni tbody tr td {
+            border-bottom: 1px dashed black;
+        }
+        #zaposleni tfoot tr {
+            background-color: rgb(207, 200, 200);
+        }
+        #zaposleni tbody tr td:nth-child(1), 
+        #zaposleni tbody tr td:nth-child(3) {
+            text-align: right;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table id="zaposleni">
+        <thead>
+            <tr>
+                <th colspan="2">zaposleni</th>
+                
+                <th rowspan="2" id="plata">plate</th>
+            </tr>
+            <tr>
+                <th>r.br.</th>
+                <th>ime i prezime</th>
+                
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>pepa peric</td>
+                    <td>700e</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>pepa peric</td>
+                    <td>700e</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>pepa peric</td>
+                    <td>700e</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Suma:</td>
+                    <td class="right">2800e</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>
