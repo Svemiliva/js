@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalendar</title>
+    <style>
+        #kalendar {
+            border: 2px solid darkcyan;
+         
+          
+        }
+        #kalendar thead tr th {
+            font-size: 10pt;
+            background-color: pink;
+          
+        }
+        #kalendar tbody tr td {
+        border: 1px dashed darkcyan;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 8pt;
+        text-align: right;
+        vertical-align: top;
+        }
+       
+        #kalendar tbody tr td:last-child{
+        background-color: rgba(221, 88, 88, 0.788);
+        color: beige;
+        }
+        #kalendar tbody tr td:nth-child(6) {
+            background-color: rgba(248, 132, 132, 0.788);
+        }
+        .current-day {
+            color: whitesmoke;
+            background-color: darkcyan;
+        }
+            </style>
+</head>
+<body>
+    <table id="kalendar">
+        <thead>
+            <tr>
+                <th colspan="7" id="title"></th>
+            </tr>
+            <tr>
+                <th>Pon</th>
+                <th>Uto</th>
+                <th>Sre</th>
+                <th>Cet</th>
+                <th>Pet</th>
+                <th>Sub</th>
+                <th>Ned</th>
+            </tr>
+        </thead>
+        <tbody id="dani">
+
+        </tbody>
+    </table>
+    <script>
+        function resetKalendara() {
+            document.getElementById('title').innerText= "";
+            document.getElementById("dani").innerHTML= "";
+        }
+        function popuniKalendar(godina, mesec) {
+            resetKalendara();
+            let imenaMeseci = [
+                "januar", "februar", "mart", "april", "maj", "jun", "jul", "avgust", "septembar", "oktobar", "novembar", "decembar"
+            ];
+            let imeIzabranogMeseca= imenaMeseci[mesec-1];
+            let t= imeIzabranogMeseca + "" + godina;
+            document.getElementById("title").innerText= t;
+
+            let prvi = new Date(godina, mesec-1, 1);
+            let kraj = new Date(godina, mesec, 0);
+
+            let dUNP = prvi.getDay();
+            if (dUNP == 0) dUMP=7;
+
+            let dUNK = kraj.getDay();
+            if (dUNK == 0) dUNK = 7;
+
+            let brojDana = kraj.getDate();
+
+            let dani = [];
+            for (let i=1; i<dUNP; i++) {
+                dani.push("");
+                }
+            for (let dan= 1; dan<brojDana; dan++){
+                dani.push(dan);
+                }    
+            for (let i=dUNK; i<7; i++){
+                dani.push("");
+                }   
+            let nedelje = [];
+            while (dani.length>0){
+                let narednaNedelja = dani.splice(0,7);
+                nedelje.push(narednaNedelja);
+            }
+            popuniTeloKalendara (nedelje);
+            }
+            function popuniTeloKalendara (nedelje) {
+                for (let nedelja of nedelje){
+                    let red = document.createElement ("tr");
+                    for (let dan of nedelja) {
+                        let td = document.createElement ("td");
+                        td.innerText= dan;
+                        red.appendChild(td);
+                    }
+                    document.getElementById("dani").appendChild(red);
+                }
+
+            }
+            window.addEventListener("load", main);
+            function main() {
+                let sada= new Date ();
+                popuniKalendar(sada.getFullYear(), sada.getMonth()+1);
+            }
+        
+    </script>
+</body>
+
+</html>
