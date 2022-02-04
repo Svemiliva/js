@@ -70,7 +70,7 @@
                 "januar", "februar", "mart", "april", "maj", "jun", "jul", "avgust", "septembar", "oktobar", "novembar", "decembar"
             ];
             let imeIzabranogMeseca= imenaMeseci[mesec-1];
-            let t= imeIzabranogMeseca + "" + godina;
+            let t= imeIzabranogMeseca + " " + godina;
             document.getElementById("title").innerText= t;
 
             let prvi = new Date(godina, mesec-1, 1);
@@ -116,7 +116,7 @@
             window.addEventListener("load", main);
             function main() {
                 let sada= new Date ();
-                popuniKalendar(sada.getFullYear(), sada.getMonth()+1);
+                popuniKalendar(2022, 4);
             }
         
     </script>
