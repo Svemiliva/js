@@ -39,3 +39,28 @@
     border: 1px solid black;
     margin: 5px;
 }
+#element-3 {
+    border: 1px solid red;
+    background-color: #ff000070;
+    height: 60px;
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+}
+#element-3:hover {
+    border: 5px solid yellow;
+}
+#element-4 {
+    border: 1px solid #0000ff;
+    background-color: #0000ff70;
+    height: 60px;
+    width: 250px;
+    position: absolute;
+    right: 0px;
+    z-index: 9;
+  
+}
+#element-4:hover {
+    border: 5px solid yellow;
+}
