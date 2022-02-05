@@ -1,0 +1,41 @@
+#app {
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+#element-1 {
+    border: 1px solid red;
+    margin: 5px;
+    
+    
+    
+}
+#pod-element1-1 {
+    color: pink;
+    position: absolute ;
+    bottom: 0px;
+    right: 5px;
+}
+#pod-element1-2 {
+    color: rgb(231, 19, 178);
+}
+#element-2 {
+    border: 1px solid blue ;
+    margin: 5px;
+    position: absolute ;
+    bottom: 0px;
+    left: 5px;
+}
+#pod-element2-1 {
+    color: rgb(217, 240, 15);
+}
+#pod-element2-2 {
+    color: rgb(13, 230, 230);
+}
+#element-1 > div,
+#element-2 > div {
+    border: 1px solid black;
+    margin: 5px;
+}
