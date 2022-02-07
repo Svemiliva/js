@@ -1,0 +1,14 @@
+body {
+    display: grid;
+}
+.obojeno {
+    width: 600px;
+    height: 300px;
+    border: 2px solid brown;
+    justify-self: center;
+    text-align: center;
+    font-size: 30pt;
+    color: beige;
+    padding-top: 150px;
+    background:linear-gradient( 0turn, rgb(61, 11, 11), rgb(196, 114, 114), rgb(192, 185, 185)) ;
+}
