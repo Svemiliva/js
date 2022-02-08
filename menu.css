@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    width: 500px;
+}
+nav > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    position: relative;
+}
+nav > div > a {
+    display: block;
+    text-decoration: none;
+    color: brown;
+    padding: 20px;
+}
+nav > div > a:hover {
+    background-color: brown;
+    color: beige;
+    transition: 150ms;
+}
+nav > div > div > a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid brown;
+    text-align: left;
+    color: black;
+    padding: 5px 0;
+}
+nav > div > div > a:hover {
+    background-color: brown;
+    color: beige;
+}
+nav > div > div {
+    display: none;
+    position: absolute;
+}
+nav > div:hover > div {
+    display: block;
+}
