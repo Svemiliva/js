@@ -7,6 +7,10 @@ nav > div {
     flex-basis: 0;
     text-align: center;
     position: relative;
+    border-right: 1px solid gray;
+}
+nav > div:last-child {
+    border-right: none;
 }
 nav > div > a {
     display: block;
