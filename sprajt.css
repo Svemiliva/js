@@ -4,13 +4,32 @@
 }
 
 .sprite2 {
-    background-position-x: -480px ;
+    background-position-x: -430px ;
     width: 400px;
     height: 170px;
 }
 .sprite3 {
-    background-position-x: 0px ;
-    background-position-y: -280px ;
+    background-position: 0px -280px ;
+    width: 400px;
+    height: 170px;
+}
+.sprite1 {
+    background-position: 0px 0px;
+    width: 400px;
+    height: 170px;
+}
+.sprite4 {
+    background-position: -430px -280px;
+    width: 400px;
+    height: 170px;
+}
+.sprite5 {
+    background-position: 0px -550px;
+    width: 400px;
+    height: 170px;
+}
+.sprite6 {
+    background-position: -430px -550px;
     width: 400px;
     height: 170px;
 }
