@@ -1,0 +1,16 @@
+.sprite-a {
+    display: inline-block;
+    background-image: url(./assets/sprajt.jpg);
+}
+
+.sprite2 {
+    background-position-x: -480px ;
+    width: 400px;
+    height: 170px;
+}
+.sprite3 {
+    background-position-x: 0px ;
+    background-position-y: -280px ;
+    width: 400px;
+    height: 170px;
+}
