@@ -3,6 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    font-family: sans-serif
+    ;
+}
 .container {
     width: 1440px;
     margin: 0px auto;
@@ -91,5 +95,71 @@ align-items: center;
 }
 #sadrzaj {
    flex-grow: 1; 
+   flex-basis: 0;
 }
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #999999;
+    color: #999999;
+}
+
+.grupa-filtera {
+    margin: 10px 0px;
+}
+.grupa-filtera .subtitle {
+    font-size: 24px;
+    color: #ffd42a;
+    margin-bottom: 5px;
+}
+
+.filter {
+    margin: 3px 0px 3px 15px;
+    font-size: 24px;
+    color: #b3b3b3;
+}
+#sadrzaj .selektor {
+    font-size: 24px;
+    color: #ffd42a;
+    padding: 15px 0px;
+    margin-left: 10px;
+}
+.obican-selektor {
+    padding: 4px;
+    border: 1px solid #999999;
+    vertical-align: text-top;
+    margin-left: 20px;
+    color: #999999;
+}
+#artikli {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.artikal {
+    display: block;
+    width: 32%;
+    border: 1px solid #ececec;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+.artikal img {
+    width: 100%;
+    height: auto;
+}
+.artikal .cena {
+    font-size: 28px;
+    color: #ffd42a;
+    margin: 3px 0px;
+}
+
+.artikal .podnaslov {
+ color: #999999;
+}
+
 
