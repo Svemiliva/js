@@ -1,0 +1,18 @@
+.holder {
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.box {
+    border: 1px solid black;
+}
+.wide {
+    grid-column: auto / span 2;
+}
+.big {
+    grid-row: auto / span 2;
+    grid-column: auto / span 2;
+}
