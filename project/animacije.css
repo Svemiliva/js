@@ -1,0 +1,19 @@
+@keyframes prva-animacija {
+    from {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+    to {
+        width: 400px;
+        height: 50px;
+        background-color: green;
+    }
+}
+
+#element {
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    animation: prva-animacija 4s alternate 2 forwards;
+}
